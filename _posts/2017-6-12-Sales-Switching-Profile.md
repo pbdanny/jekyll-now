@@ -46,6 +46,4 @@ ggplot(data = os_agent_s_view) +
   geom_histogram(mapping = aes(x = mob, fill = factor(substr(Source_Code, 1, 1))),
                  alpha = 0.6, binwidth = 1, position = 'identity')
 ```
-<a href="Sales Single View 2"><img src="https://github.com/pbdanny/pbdanny.github.io/blob/master/images/Sales_Single_View_2.png" align="left" height="332" width="680"></a>
-
-
+![Sales Single View 2](../images/Sales_Single_View_2.png)
