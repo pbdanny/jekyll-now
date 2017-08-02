@@ -5,11 +5,11 @@ title: "ANOVA, what really it is?"
 
 # What really is the ANOVA?
 
-Actually ANOVA came from **AN**alysis **O**f **VA**rience which is statistical technique to inference about the sample data by analysis focus on the varience;to be exact it is focus on **Sum Square analysis.**
+Actually ANOVA came from **AN**alysis **O**f **VA**rience which is statistical technique to inference about the sample data by analysis focus on the varience;to be exact it is focus on minimizing the **Sum Square analysis.** \\(SS\\)
 
 The methode of analysis could summarize in 3 steps
-1. Identify original state; null hypothsis (\\(H\_{0}\\)) : if we do ANOVA to test if 2 groups of data have same mean this means orginal state is both group have same mean, or **grand mean** \\(\bar{Y}..\\) 
-2. Calculate the **Treatment** 
+1. Identify original state; null hypothsis (\\(H\_{0}\\)) : if we do ANOVA to test if where is different mean within groups of data , orginal state is all group \\(SS\\) are minimized for central mean, or **grand mean** \\(\bar{Y}\bullet\bullet\\). Whereas, if we test linear regression \\(y ~ x\\) original state is there is no effect of \\(x\\) on \\(SS\\) of \\(y\\), or the \\(SS\\) of \\(y\\) are the \\(y\\) it self with not effect from other factors.
+2. Calculate the effect of **Treatment** on \\(SS\\): If we test if different mean   
 
 Test math jax
 $$a^2 + b^2 = c^2$$
