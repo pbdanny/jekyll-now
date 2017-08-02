@@ -8,3 +8,6 @@ $$a^2 + b^2 = c^2$$
 
 Test math jax
 $$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$
+
+Test subscribtion
+$$ X\_{i} $$
