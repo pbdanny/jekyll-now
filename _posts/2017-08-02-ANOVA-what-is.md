@@ -13,7 +13,7 @@ The methode of analysis could summarize in 3 steps
 
 **1. Identify original state** or null hypothsis (\\(H\_{0}\\))
   For testing difference mean of 2 or more groups of data, we start with original state that all the data have **no** subgroup with their own _mean_ or _moment_, all the data varience could be best represented with \\(SS\\) that _minimized_ at grand _moment_, or **grand mean** \\(\bar{Y}\bullet\bullet\\). The result \\(SS\\) of original state will be \\(SS\\) on grand means with equation 
-    \\[ SS_{Total} = \sum_{i=1}^n (y\_{i} - \bar{y})^2 \\]
+  \\[ SS_{Total} = \sum_{i=1}^n (y\_{i} - \bar{y})^2 \\]
     
   For the linear regression \(y \sim x\) the original state we start with the regression parameter \\(\beta\_{i}\\) of idependent varible \\(x\\) have **no** effect (or correlation) on \\(SS\\) of dependent varible \\(y\\), and the varience of \\(y\\) is best represented by the \\(SS\\) that _minimized_ at the _mean_ or _moment_ of \\(y\\) itself. (Quite confusing, yess.) The result \\(SS\\) oft original state will be \\(SS\\) on it's \\(y\\)'s mean it self with equaltion
   \\[ SS_{Total} = \sum_{i=1}^n (y\_{i} - \bar{y})^2 \\] 
@@ -21,19 +21,23 @@ The methode of analysis could summarize in 3 steps
 **2. Calculate the effect of _Treatment_** or alternate hypothesis (\\(H\_{a}\\))
   For testing difference mean of 2 or more group of data, then we guess that there are better _moments of each group_ that yield _more minimized_ \\(SS\\) when each data point gravitated towards its own mean \\(\bar{Y}_{k}\bullet\\). The result \\(SS\\) of _treatment_ state will be \\(SS\\) of each data point on group mean 
   
-  \\[ SS_{Treatment} = \sum_{j=1}^k \sum_{i=1}^n n_j(\bar{y}\_{j}\bullet - \bar{y}\bullet\bullet)^2 \\]
+  \\[ SS_{Treatment} = \sum_{j=1}^k \sum_{i=1}^n n_j(\bar{y}\_{j}\bullet - \bar{y}\bullet\bullet)^2 \\] to clarily we use \\(SS_{Group}\\}
   
   The left-over of \\(SS\\) or **residual** will be \\(SS_{resid}\\) = \\(SS_{total} - SS_{Treatment} \\)
     
   For the linear regression \\(y \sim x\\) , we guess that the regression parameter \\(\beta\_{i}\\) of idependent varible \\(x\\) have effect on the \\(SS\\) of \\(y\\), and the varience of \\(y\\) could be represented with the \\(SS\\) of _regression point_ \\(\hat{y}\\) or \\(\beta_{0} + \beta_{1}x\\).
   
   The \\(SS\\) of _regression line_ could be represented with quation
-  \\[SS_{Regression} = \sum_{i=1}^n(\hat{y}_{i} - y_{i})^2 \\]
+  \\[SS_{Treatment} = \sum_{i=1}^n(\hat{y}_{i} - y_{i})^2 \\] to clarify we use \\(SS_{Regression}\\) in the same meaning
   
   The left-over of \\(SS\\) or **residual** will be \\(SS_{resid}\\) = \\(SS_{total} - SS_{Regression} \\)
 
-**3. Calcualate the test statistic _F-test_**
-  The fundamental test statistic based on the proportion of _Treatment_ to _original_ 
+**3. Calcualate the Mean square** and find the _degree of freedom_
+  the **Mean square** equation is
+  \\[MS = \frac{SS}{degree of freedom} \\]
+  
+  The _Degree of freedom_ is offet of for calculating point estimator by using the point estimator (What?), with the number of points - the nubmer of points used in calculate point estimator, for example the degree of freedom of \\(SS_{Group}\\) (different group mean)  = number of group (k) - 1 , where the -1 come from the calculation of SS we use 1 observation \\(\bar{y}_{j}\bullet\\) for calcualte \\(SS\\) then -1 deduct from k to be k-1)
+
 
 Test math jax
 $$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$
