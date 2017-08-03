@@ -5,7 +5,8 @@ title: "ANOVA, what really it is?"
 
 ## What really is the ANOVA?
 
-ANOVA came from **AN**alysis **O**f **VA**rience which is statistical technique to inference about the sample data by focusing analysis on the varience; to be exact focusing on **Sum Square** \\(SS\\) analysis with equation.
+ANOVA came from **AN**alysis **O**f **VA**rience which is statistical technique to inference about the sample data by focusing analysis on the varience; to be exact focusing on **Sum Square** \\(SS\\) analysis with equation
+
 $$ \sum_{i=1}^n (y\_{i} - \bar{y})^2 $$
 
 The methode of analysis could summarize in 3 steps
