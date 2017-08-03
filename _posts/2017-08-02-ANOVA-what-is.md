@@ -25,7 +25,12 @@ The methode of analysis could summarize in 3 steps
   
   The left-over of \\(SS\\) or **residual** will be \\(SS_{resid}\\) = \\(SS_{total} - SS_{Treatment} \\)
     
-  For the linear regression \\(y \sim x\\) , we guess that the regression parameter \\(\beta\_{i}\\) of idependent varible \\(x\\) have effect on the \\(SS\\) of \\(y\\), and the varience of \\(y\\) could be represented with the \\(SS\\) of _regression point_ \\(\hat{y}\\). (or \\(SS\\) of \\(\beta_{0} + \beta_{1}x\\) + **some** error (if available).
+  For the linear regression \\(y \sim x\\) , we guess that the regression parameter \\(\beta\_{i}\\) of idependent varible \\(x\\) have effect on the \\(SS\\) of \\(y\\), and the varience of \\(y\\) could be represented with the \\(SS\\) of _regression point_ \\(\hat{y}\\) or \\(\beta_{0} + \beta_{1}x\\).
+  
+  The \\(SS\\) of _regression line_ could be represented with quation
+  \\[SS_{Regression} = \sum_{i=1}^n(\hat{y}_{i} - y_{i})^2 \\]
+  
+  The left-over of \\(SS\\) or **residual** will be \\(SS_{resid}\\) = \\(SS_{total} - SS_{Regression} \\)
 
 **3. Calcualate the test statistic _F-test_**
   The fundamental test statistic based on the proportion of _Treatment_ to _original_ 
