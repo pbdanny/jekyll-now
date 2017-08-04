@@ -36,10 +36,12 @@ The methode of analysis could summarize in 3 steps
   the **Mean square** equation is
   \\[MS = \frac{SS}{degree of freedom} \\]
   
-  The _Degree of freedom_ is offet of for calculating point estimator by using the point estimator (What?), with the number of points - the nubmer of points used in calculate point estimator, for example the degree of freedom of \\(SS_{Group}\\) (different group mean)  = number of group (k) - 1 , where the -1 come from the calculation of SS we use 1 observation \\(\bar{y}_{j}\bullet\\) for calcualte \\(SS\\) then -1 deduct from k to be k-1)
+  The _Degree of freedom (df)_ is the penalties for using point estimator *(like sample mean \\(\bar{y} \\) in calculating varience (What?) \\( note: Var(y) = \sum_{i}^n (y\_{i} - \bar{y})^2 \\). In general the degree of freedom = the number of parameters - the nubmer of parameters used in calculate varience
+  For example, the degree of freedom (df) of \\(SS_{Group}\\) (different group mean) = number of group (k) - 1, which the -1 come from the calculation of SS we use 1 parameter \\(\bar{y}_{j}\bullet\\) for calcualte \\(SS\\) then -1 deduct from k to be k-1).
+  
+  We use df. to caculate Mean Square by
+  
+  \\[\frac{SS}{df} \\]
 
-
-Test math jax
-$$ \mathsf{Data = PCs} \times \mathsf{Loadings} $$
-
-Test subscription \\( X\_{i} \\)
+**4. Calculate F-Statistic**
+  The _F-statistic_ is the proportion of \\( \frac{MS_{Treatment}{MS_{residual}} \\)
