@@ -44,4 +44,4 @@ The methode of analysis could summarize in 3 steps
   \\[\frac{SS}{df} \\]
 
 **4. Calculate F-Statistic**
-  The _F-statistic_ is the proportion of \\( \frac{MS_{Treatment}{MS_{residual}} \\)
+  The _F-statistic_ is the proportion of \\( \frac{MS_{Treatment}{MS_{residual}} \\). The motivation behind the F-statistic is if the \\(MS_{Treatment}\\) could be better represent the varience than the Residual varience \\(MS_{residual}\\) will be very little compare to the \\(MS_{Treatment}\\) result in the more right side p-value, then reject \\(H_{0}\\)
