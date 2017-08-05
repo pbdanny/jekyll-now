@@ -75,4 +75,12 @@ treat.ss <- treat.ss.r + treat.ss.s
 e.ss <- total.ss - treat.ss
 ```
   The sum square total = 10064.57, sum square treatment = 9961.857 and sum square error = 102.711. the mean square of treatment = SS. of treatment / df. of treatment (# of group - 1, 2-1 = 1). and the mean square of error = SS. of error/ df. of error (# total observation -  # group - 1 = 100 - 2 - 1 = 97)
-  The result F-statistic = ms. of treatment / ms. of error = 9961.857/1.0588 = 9407.954
+  The result F-statistic = ms. of treatment / ms. of error = 9961.857/1.0588 = 9407.954. Calculate right side F-statistic from R by,
+  
+```r
+pf(9407.857, df1 = 1, df2 = 97, lower.tail = F)
+```
+
+![F statistic pic](../images/f-table.jpg)
+
+  P-value = 0 that means the chance of equal mean of each group = 0, or each group have different mean.
