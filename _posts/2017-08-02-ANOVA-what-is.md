@@ -136,6 +136,9 @@ anova(fit1, fit2)
   Further details could find by linked below.
   
 [One Way Anova](https://egret.psychol.cam.ac.uk/statistics/R/anova.html#technicalities)
+
 [Basic Anova for linear regression evaluation](http://reliawiki.org/index.php/Simple_Linear_Regression_Analysis)
+
 [Anova 'R' vs 'SPSS'](https://mcfromnz.wordpress.com/2011/03/02/anova-type-iiiiii-ss-explained/)
+
 [Anova TYPE-I,II,III](http://goanna.cs.rmit.edu.au/~fscholer/anova.php)
