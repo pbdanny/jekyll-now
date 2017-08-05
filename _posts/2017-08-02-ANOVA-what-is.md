@@ -44,6 +44,35 @@ The methode of analysis could summarize in 3 steps
   \\[\frac{SS}{df} \\]
 
 **4. Calculate F-Statistic**
-  The _F-statistic_ is the proportion of \\( \frac{MS_{Treatment}{MS_{residual}} \\). The motivation behind the F-statistic is if the \\(MS_{Treatment}\\) could be better represent the varience than the Residual varience \\(MS_{residual}\\) will be very little compare to the \\(MS_{Treatment}\\) result in the more right side p-value, then reject \\(H_{0}\\)
+  The _F-statistic_ is the proportion of \\( \frac{MS_{Treatment}}{MS_{residual}} \\). The motivation behind the F-statistic is if the \\(MS_{Treatment}\\) could be better represent the varience; than the Residual varience \\(MS_{residual}\\) will be very little compare to the \\(MS_{Treatment}\\) result in the more right side p-value, then reject \\(H_{0}\\)
+
+
+  we can simulate the anova test of different mean in R
   
-![anova pic](https://github.com/pbdanny/pbdanny.github.io/blob/master/images/Anova-1.png)
+```r
+r <- rnorm(n = 50, mean = 20, sd =1)
+s <- rnorm(n = 50, mean = 0, sd = 1)
+d <- as.data.frame(c(r,s))
+colnames(d) <- "d"
+plot(density(d$d))    
+```
+  Result in picture below, with grand mean = 9.964 and mean of group r = 20, while mean of group s = 0.
+  
+![anova pic](../images/Anova-1.png)
+
+  Let's calculate Sum Square total and sum square of treatment and sum square of total.
+  
+```r
+# sum square total
+total.ss <- sum((d$d - mean(d$d))^2)
+
+# sum square treatment
+treat.ss.r <- ((mean(r) - mean(d$d))^2)*length(r)
+treat.ss.s <- ((mean(s) - mean(d$d))^2)*length(s)
+treat.ss <- treat.ss.r + treat.ss.s
+
+# sum square error/residual
+e.ss <- total.ss - treat.ss
+```
+  The sum square total = 10064.57, sum square treatment = 9961.857 and sum square error = 102.711. the mean square of treatment = SS. of treatment / df. of treatment (# of group - 1, 2-1 = 1). and the mean square of error = SS. of error/ df. of error (# total observation -  # group - 1 = 100 - 2 - 1 = 97)
+  The result F-statistic = ms. of treatment / ms. of error = 9961.857/1.0588 = 9407.954
