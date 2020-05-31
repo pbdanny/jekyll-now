@@ -9,5 +9,5 @@ Data centric business analyst + strategist. Experience in statistical analysis &
 
 ### Contact me
 
-[pb.danny@gmail.com](mailto:pb.dany@gmail.com)  
-LinkedIn(http://www.linkedin.com/in/dannythanakrit)
+[Email](mailto:pb.dany@gmail.com)  
+[LinkedIn](http://www.linkedin.com/in/dannythanakrit)  
