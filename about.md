@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Data centric business analyst + strategist with background in sales & marketing. Capable of end-to-end process & reporting to C-level. Comfortable with Marketing, IT, Data project. Preferred to work as a team in dynamic workplace.
-
-### More Information
-
-Very mush appreciate all comments.
+Connecting various data perspectives, developing prescriptibility.  
+Data centric business analyst + strategist. Experience in statistical analysis & visualization for marketing and customer project. Preferred to work as a team in a dynamic workplace.  
 
 ### Contact me
 
-[pb.danny@gmail.com](mailto:pb.dany@gmail.com)
+[pb.danny@gmail.com](mailto:pb.dany@gmail.com)  
+LinkedIn(http://www.linkedin.com/in/dannythanakrit)
