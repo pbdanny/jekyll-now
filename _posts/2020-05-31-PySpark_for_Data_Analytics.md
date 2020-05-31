@@ -19,7 +19,7 @@ Sadly, the Spark SQL API was written in concise manner. This post intent to exte
 
 #### 1. Create SparkDataframe for testing.
 
-spark.createDataFrame( __ [List of data in tuple ( , )]__  ,   __Column name in tuple ( , )__) 
+spark.createDataFrame( __[List of data in tuple ( , )]__  ,   __Column name in tuple ( , )__) 
 
 Example
 
