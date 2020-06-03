@@ -132,4 +132,4 @@ df.withColumn('short_circuit',
 +---+---+-------------+
 ```
 
-In first row, column 'short_circuit' got values from 1st condition (<=2), without re-ealuate the 2nd contions (<=1)  
+In first row, column was short circuitted by 1st condition (<=2), without re-evaluate the 2nd contions (<=1)  
