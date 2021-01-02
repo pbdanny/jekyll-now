@@ -9,10 +9,10 @@ Usually, in Big Data world, the PySpark have only roles as midle man for query a
     
 Anyway, PySpark have very useful SparkSQL, which could do advance analytic like :- 
 
-- Stats aggreation
+- Stats aggregation
 - Windows
 - Pivots
-- Data Cube aggregration
+- Data Cube aggregation
 ect.
 
 Sadly, the Spark SQL API was written in concise manner. This post intent to extend the SparkSQL API based on real analytic applications.
